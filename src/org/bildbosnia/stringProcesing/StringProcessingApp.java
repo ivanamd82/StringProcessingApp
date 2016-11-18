@@ -34,10 +34,17 @@ public class StringProcessingApp {
 	//ivana
 	public static void stringLength (String s) {
 		
+		System.out.printf("Duzina stringa koji ste unijeli je: %d\n", s.length());
 	}
 	
 	//ivana
 	public static void evenPositionChar (String s) {
+		
+		System.out.println("Karakteri na neparnim pozicijama: ");
+		for (int i = 0; i < s.length(); i+=2) {
+			System.out.print(s.charAt(i)+" ");
+		}
+		System.out.println();
 		
 	}
 	
