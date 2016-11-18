@@ -50,12 +50,21 @@ public class StringProcessingApp {
 	
 	//mensur
 	public static void oddPositionChar (String s) {
-		
+		System.out.println("Karakteri na parnim pozicijama: ");
+		for (int i = 1; i < s.length(); i+=2) {
+			System.out.print(s.charAt(i)+" ");
+		}
+		System.out.println();
 	}
 	
 	//mensur
 	public static void numberOfUpperChar (String s) {
-		
+		int brojac = 0;
+		for (int i = 0; i < s.length(); i++) {
+			if (Character.isUpperCase(s.charAt(i)))
+				brojac++;
+		}
+		System.out.println("Broj velikih slova sadrzanih u stringu: " + brojac);
 	}
 	
 	//samir
