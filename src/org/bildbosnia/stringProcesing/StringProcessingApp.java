@@ -52,7 +52,8 @@ public class StringProcessingApp {
 	public static void oddPositionChar (String s) {
 		System.out.println("Karakteri na parnim pozicijama: ");
 		for (int i = 1; i < s.length(); i+=2) {
-			System.out.print(s.charAt(i)+" ");
+			if (s.charAt(i) != ' ')
+				System.out.print(s.charAt(i)+" ");
 		}
 		System.out.println();
 	}
