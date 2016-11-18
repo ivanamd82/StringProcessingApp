@@ -61,12 +61,26 @@ public class StringProcessingApp {
 	//samir
 	public static void numberOfLowerChar (String s) {
 		
+		 int count =0;
+		
+		 for(int i=0; i<s.length();i++) {
+	        if(Character.isLowerCase(s.charAt(i))){
+	        	count ++;
+	        	}
+		 }	
+		 System.out.println("Broj malih slova u stringu je: " + count);
 	}
 	
 	//samir
 	public static void allNonLetterChar (String s) {
 		
-	}
+		String string ="";
 	
-
+		 for(int i=0; i<s.length();i++) {
+		        if(!Character.isLetter(s.charAt(i))){
+		        	string+=s.charAt(i);
+		        	}
+	            }
+		 System.out.println("Modifikovani string ne sadrzi slova: " + string);
+	}
 }
